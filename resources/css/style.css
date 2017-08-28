@@ -58,3 +58,57 @@ nav li {
 }
 
 /* Our offer */
+
+.our-offer .flex.container {
+  height: 8rem;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5rem;
+  margin: 0 5rem;
+}
+.offer.exams img {
+  width: 3.5rem;
+}
+.offer.fittings img, .offer.delivery img{
+  width: 5rem;
+}
+.our-offer .description {
+  text-align: center;
+  margin-top: auto;
+  align-items: flex-end;
+}
+
+/* Business info */
+.info {
+  width: 35%;
+  margin: 0 5%;
+}
+
+.info .title {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: azure;
+  margin-top: 5rem;
+  padding: 4rem 0;
+}
+footer .flex.container {
+  align-items: center;
+}
+footer img {
+  height: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
