@@ -1,0 +1,58 @@
+/* Universal styles */
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: white;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+.flex {
+  display: flex;
+}
+
+/* Banner and menu */
+
+.main-banner {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+.logo-and-menu {
+  display: flex;
+  background-color: cadetblue;
+  color: white;
+  margin: 1rem 0 0 0;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding: 1rem 2rem;
+}
+.slogan {
+  background: white;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  margin: 10rem -2rem 0 auto;
+}
