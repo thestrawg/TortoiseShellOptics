@@ -48,13 +48,66 @@ nav ul {
 nav li {
   padding: 1rem 2rem;
 }
+.mobile-nav {
+  display: none;
+}
 .slogan {
   background: white;
   color: black;
   font-size: 2rem;
+  line-height: 1.2;
   font-weight: bold;
   padding: 1.5rem 5rem;
   margin: 10rem -2rem 0 auto;
+}
+.mobile-slogan {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .logo-and-menu {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .main-banner {
+    height: 22rem;
+  }
+  .slogan {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin: 5rem 2rem 0 auto;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .logo span {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .main-banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .pc-tablet-slogan {
+    display: none;
+  }
+  .mobile-slogan {
+    display: block;
+  }
+  .slogan {
+    margin: 9rem 0 auto 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
 }
 
 /* Our offer */
@@ -83,6 +136,20 @@ nav li {
   align-items: flex-end;
 }
 
+@media only screen and (max-width: 470px) {
+  .our-offer .flex.container {
+    height: auto;
+    flex-wrap: wrap;
+    margin: 3.77rem auto;
+    padding: 0;
+  }
+  .our-offer .description {
+    margin: 1.54rem 0;
+    font-size: 0.77rem;
+    text-align: center;
+  }
+}
+
 /* Business info */
 .info {
   width: 35%;
@@ -97,6 +164,27 @@ nav li {
   padding: 0.5rem 0 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
+@media only screen and (min-width: 470px) {
+  .business-info .container {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 470px) {
+
+  .info {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+  .info .title {
+    width: 100%;
+    text-align: center;
+  }
+  .info .description {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+  }
+}
+
 
 /* Footer */
 footer {
@@ -111,4 +199,15 @@ footer img {
   height: 1.5rem;
   padding-left: 4rem;
   padding-right: 1rem;
+}
+@media only screen and (max-width: 470px) {
+  footer span {
+    display: none;
+  }
+  footer img {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
